@@ -1,6 +1,6 @@
 {
-  "issuer": "https://<YOUR_SUBDOMAIN>.github.io/mock-idp",
-  "jwks_uri": "https://<YOUR_SUBDOMAIN>.github.io/mock-idp/jwks.json",
+  "issuer": "https://raw.githubusercontent.com/JarnoVergote/mock-idp-static/refs/heads/master",
+  "jwks_uri": "https://raw.githubusercontent.com/JarnoVergote/mock-idp-static/refs/heads/master/jwks.json",
   "response_types_supported": [
     "id_token"
   ],

@@ -4,13 +4,13 @@ const path = require('path');
 const jose = require('jose');
 
 // CHANGE THIS to your public hosting directory URL (No trailing slash)
-const ISSUER_URL = 'https://<YOUR_SUBDOMAIN>.github.io/mock-idp';
+const ISSUER_URL = 'https://raw.githubusercontent.com/JarnoVergote/mock-idp-static/refs/heads/master';
 
 async function main() {
     // 1. Generate an Asymmetric RSA 2048 Key Pair (with extractable set to true)
     const { publicKey, privateKey } = await jose.generateKeyPair('RS256', {
         modulusLength: 2048,
-    	extractable: true, // <-- ADD THIS LINE
+    	extractable: true
     });
 
     // 2. Export Private Key to a local file (Keep this safe, you use it to sign assertions)
